@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "export NODE_ENV=production&& ts-node-prod --max-old-space-size=2048 ./src/bin/server.ts --fast",
-    "dev": "export NODE_ENV=development&& ts-node-dev --max-old-space-size=2048 ./src/bin/server.ts --fast",
-    "local": "set NODE_ENV=local&&  ts-node-dev --max-old-space-size=2048 ./src/bin/server.ts --fast",
-    "testing": "export NODE_ENV=testing&&  ts-node-dev --max-old-space-size=2048 ./src/bin/server.ts --fast",
-    "prod": "export NODE_ENV=production&&  ts-node-dev --max-old-space-size=2048 ./src/bin/server.ts --fast"
+    "start": "export NODE_ENV=production&& npx ts-node-prod --max-old-space-size=2048 ./src/bin/server.ts --fast",
+    "dev": "export NODE_ENV=development&& npx ts-node-dev --max-old-space-size=2048 ./src/bin/server.ts --fast",
+    "local": "set NODE_ENV=local&&  npx ts-node-dev --max-old-space-size=2048 ./src/bin/server.ts --fast",
+    "testing": "export NODE_ENV=testing&&  npx ts-node-dev --max-old-space-size=2048 ./src/bin/server.ts --fast",
+    "prod": "export NODE_ENV=production&&  npx ts-node-dev --max-old-space-size=2048 ./src/bin/server.ts --fast"
   },
   "author": "",
   "license": "ISC",
